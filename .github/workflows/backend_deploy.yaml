@@ -45,6 +45,7 @@ jobs:
               echo "Building with normal pages"
               pnpm build:pages
             fi
+            cp -r dist/ ../worker/frontend_dist
             cd ..
           fi
 
